@@ -23,7 +23,7 @@ export default function MultiActionAreaCard({ post }) {
     if(post.category === "Technology"){
       setPic("https://img.freepik.com/premium-photo/social-media-blog-concept-futuristic-icon-design-graphics-hand-with-smartphone_102583-6104.jpg");
     }
-    if(post.category === "Fashion"){
+    if(post.category === "Poem"){
       setPic("https://img.freepik.com/free-vector/hand-drawn-fashion-shop-pattern-background_23-2150849915.jpg");
     }
     if(post.category === "General"){
