@@ -1,7 +1,6 @@
 import Banner from "./Banner";
 import Categories from "./Categories";
 import Posts from "../post/AllPosts";
-import { Grid} from "@mui/material";
 
 
 
@@ -9,7 +8,8 @@ const Home = () =>{
     return(
         <>
             <Banner/>
-            <Grid container>
+            
+            {/* <Grid container>
                 <Grid item lg={1.5} sm={2} xs={2}>
                     <Categories/>
                 </Grid>
@@ -17,7 +17,16 @@ const Home = () =>{
                 <Posts/>
             </Grid>
             
-            </Grid>
+            </Grid> */}
+
+            <div style={{display: "flex", flexDirection: "row"}}>
+                <div className="left" style={{width: "10rem"}}>
+                    <Categories/>
+                </div>
+                <div className="right" style={{display:"flex", flexDirection:"row" ,width: "90%", justifyContent: "center"}}>
+                    <Posts/>
+                </div>
+            </div>
             
         </>
     )
