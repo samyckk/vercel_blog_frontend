@@ -33,7 +33,7 @@ export default function MultiActionAreaCard({ post }) {
 
 
   return (
-    <Card style={{height: "100%", width: "20rem"}}>
+    <Card style={{height: "100%", width: "18rem", margin: "25px"}}>
       <CardActionArea>
         <CardMedia
           component="img"
