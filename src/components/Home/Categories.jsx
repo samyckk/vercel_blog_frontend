@@ -17,11 +17,11 @@ const StyledTable = styled(Table)`
 `
 
 const cate= [
+    "Poem",
     "Music",
     "Sports",
     "Movies",
     "Technology",
-    "Fashion",
     "General"
 ]
 
