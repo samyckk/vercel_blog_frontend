@@ -24,7 +24,7 @@ export default function MultiActionAreaCard({ post }) {
       setPic("https://img.freepik.com/premium-photo/social-media-blog-concept-futuristic-icon-design-graphics-hand-with-smartphone_102583-6104.jpg");
     }
     if(post.category === "Poem"){
-      setPic("https://img.freepik.com/free-vector/hand-drawn-fashion-shop-pattern-background_23-2150849915.jpg");
+      setPic("https://c0.wallpaperflare.com/preview/181/626/366/feather-filler-poetry-poetic.jpg");
     }
     if(post.category === "General"){
       setPic("https://wallpapers.com/images/hd/dark-workspace-blogging-backdrop-acqoss4ry3i7ijyl.jpg");
