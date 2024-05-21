@@ -42,11 +42,11 @@ const Categories = () => {
             {
                 canCreate ?(
                     <Link to={`/create/?cat=${category}`}>
-                        <Btn >Create Blog</Btn>
+                        <Btn style={{backgroundColor: "#40ADF1"}}>Create Blog</Btn>
                     </Link>
                 ):
                 (
-                    <Btn onClick={()=>{alert("Select Category from the list to create a Blog")}}>Select Category to Create a Blog</Btn>
+                    <Btn style={{backgroundColor: "grey"}} onClick={()=>{alert("Select Category to create a Blog")}}>Select Category to Create a Blog</Btn>
                 )
 
             }
