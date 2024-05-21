@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import PostLayout from "./PostLayout";
-import { Grid } from "@mui/material";
 import { useSearchParams, Link } from "react-router-dom";
 
 const Post = () => {
@@ -35,21 +34,21 @@ const Post = () => {
   
 
   return (
-    <Grid container spacing={2} sx={{ margin: "10px" }}>
+    <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center", alignItems: "center"}}>
       {/* Add margin */}
       {allPost && allPost.length > 0 ? (
         allPost.map((post) => (
-          <Grid item lg={4} md={4} sm={6} xs={12} key={post._id}>
+          <div style={{display: "flex", flexDirection:"row", margin: "20px"}}>
             <Link to={`/details/${post._id}`} style={{textDecoration: 'none', color: 'inherit'}}>
               <PostLayout post={post} />
             </Link>
+          </div>
             
-          </Grid>
         ))
       ) : (
         <img style={{margin: 'auto'}} src="https://i.pinimg.com/originals/c7/e1/b7/c7e1b7b5753737039e1bdbda578132b8.gif" alt="loader" srcset="" />
       )}
-    </Grid>
+    </div>
   );
 };
 
