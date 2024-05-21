@@ -46,7 +46,7 @@ const Categories = () => {
                     </Link>
                 ):
                 (
-                    <Btn onClick={()=>{alert("Select Category from the list to create a Blog")}}>Select Category</Btn>
+                    <Btn onClick={()=>{alert("Select Category from the list to create a Blog")}}>Select Category to Create a Blog</Btn>
                 )
 
             }
